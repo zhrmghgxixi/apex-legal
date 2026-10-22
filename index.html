@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>APEX — Privacy Policy / 隐私政策 / Политика конфиденциальности</title>
+<meta name="description" content="Privacy Policy for the APEX app (Google Play / App Store). The APEX app is a local Bluetooth control tool for APEX electronic heating devices and does not collect personal data.">
+<meta name="theme-color" content="#0d0e11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230d0e11'/><circle cx='32' cy='32' r='16' fill='none' stroke='%23ff3b4e' stroke-width='5'/></svg>">
+<style>
+  :root{
+    --bg:#ffffff; --ink:#16171a; --muted:#5c6068; --line:#e5e7eb; --line2:#eef0f3;
+    --brand:#e0243a; --brand-soft:#fff1f2; --chip:#f4f5f7; --code:#f4f5f7;
+    --ok:#1a7f4b; --warn:#b3261e;
+    --shadow:0 1px 2px rgba(16,24,40,.06),0 8px 24px rgba(16,24,40,.06);
+    --radius:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d0e11; --ink:#eceef2; --muted:#9aa0aa; --line:#23262d; --line2:#1a1d23;
+      --brand:#ff4d5f; --brand-soft:#1d1517; --chip:#171a20; --code:#171a20;
+      --ok:#4ade80; --warn:#ff7b72;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);overflow-x:hidden;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB",
+                "Microsoft YaHei","Noto Sans SC","Helvetica Neue",Arial,Roboto,sans-serif;
+    font-size:16px;line-height:1.75;letter-spacing:.01em;
+  }
+  img,table{max-width:100%}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px 96px}
+
+  /* ---------- header ---------- */
+  header.top{
+    position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);
+    backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);
+  }
+  .top-inner{max-width:880px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:.14em;font-size:15px}
+  .brand .dot{width:16px;height:16px;border-radius:50%;border:3px solid var(--brand);display:inline-block}
+  .spacer{flex:1}
+  .tabs{display:flex;gap:4px;background:var(--chip);padding:4px;border-radius:999px;flex-wrap:wrap;max-width:100%}
+  .tabs button{
+    font:inherit;font-size:13px;line-height:1;padding:8px 14px;border:0;border-radius:999px;
+    background:transparent;color:var(--muted);cursor:pointer;transition:.15s;white-space:nowrap;
+  }
+  .tabs button[aria-selected="true"]{background:var(--bg);color:var(--ink);box-shadow:var(--shadow);font-weight:600}
+
+  /* ---------- title block ---------- */
+  .hero{padding:40px 0 8px}
+  .hero h1{font-size:30px;line-height:1.3;margin:0 0 10px;letter-spacing:-.01em}
+  .hero .sub{color:var(--muted);margin:0 0 18px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+  .meta li{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px;color:var(--muted)}
+  .lead{
+    margin:26px 0 8px;padding:18px 20px;border-radius:var(--radius);
+    background:var(--brand-soft);border:1px solid color-mix(in srgb,var(--brand) 22%,transparent);
+    font-size:16px;
+  }
+  .lead strong{color:var(--ink)}
+
+  /* ---------- article ---------- */
+  article{display:none}
+  article.active{display:block}
+  h2{font-size:20px;margin:44px 0 24px;padding-top:22px;border-top:1px solid var(--line);letter-spacing:-.01em;scroll-margin-top:80px}
+  h2:first-of-type{border-top:0;padding-top:0;margin-top:28px}
+  h3{font-size:17px;margin:32px 0 10px;scroll-margin-top:80px}
+  h3 .no{color:var(--brand);font-variant-numeric:tabular-nums;margin-right:8px}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+  th,td{border:1px solid var(--line);padding:11px 13px;text-align:left;vertical-align:top}
+  th{background:var(--chip);font-weight:600;white-space:nowrap}
+  code{background:var(--code);border:1px solid var(--line2);border-radius:6px;padding:1px 6px;font-size:13.5px;
+       font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-wrap:anywhere}
+  .note{border-left:3px solid var(--brand);background:var(--chip);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+  .ok{color:var(--ok);font-weight:600}
+  .warn{color:var(--warn)}
+  .muted{color:var(--muted)}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;background:var(--bg)}
+  .card h4{margin:0 0 6px;font-size:15px}
+  .card p{margin:0;font-size:14px;color:var(--muted)}
+
+  footer{border-top:1px solid var(--line);margin-top:56px;padding-top:22px;color:var(--muted);font-size:14px}
+  footer .sig{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between}
+
+  @media (max-width:600px){
+    .hero{padding-top:26px}
+    .hero h1{font-size:23px}
+    .hero .sub{font-size:15px}
+    .top-inner{padding:10px 14px;gap:8px}
+    .brand{font-size:13px}
+    .tabs{padding:3px}
+    .tabs button{padding:7px 9px;font-size:12px}
+    body{font-size:15.5px}
+    .wrap{padding:0 16px 72px}
+    th{white-space:normal}
+    .meta li{font-size:12px}
+    .lead{padding:15px 16px;font-size:15px}
+    h2{font-size:18px}
+    h3{font-size:16px}
+    table{font-size:14px}
+    th,td{padding:9px 10px}
+  }
+  @media print{
+    header.top,.tabs{display:none}
+    article{display:block!important}
+    h2{border-top:1px solid #ccc}
+    a{color:#000;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <span class="brand"><span class="dot"></span>APEX</span>
+    <span class="spacer"></span>
+    <nav class="tabs" role="tablist" aria-label="Language">
+      <button role="tab" data-lang="en" aria-selected="true">English</button>
+      <button role="tab" data-lang="zh" aria-selected="false">中文</button>
+      <button role="tab" data-lang="ru" aria-selected="false">Русский</button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <h1 id="pageTitle">Privacy Policy</h1>
+    <p class="sub" id="pageSub">APEX — companion app for APEX electronic heating devices</p>
+    <ul class="meta" id="pageMeta">
+      <li>Effective: 22 Oct 2026</li>
+      <li>Last updated: 22 Oct 2026</li>
+      <li>Version 1.0</li>
+      <li>Android · iOS</li>
+    </ul>
+  </div>
+
+<!-- ==================================================================== -->
+<!-- ============================== ENGLISH ============================= -->
+<!-- ==================================================================== -->
+<article id="en" class="active">
+
+  <div class="lead">
+    <strong>In one sentence:</strong> the APEX app is a local device-control tool.
+    It has no user accounts, no network access and no analytics — it does not collect,
+    store on our servers, or share any personal data. Everything it reads from your device
+    stays on your phone and on the device itself.
+  </div>
+
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#en-about">Who we are</a></li>
+    <li><a href="#en-what">What the app does</a></li>
+    <li><a href="#en-collect">Information we collect</a></li>
+    <li><a href="#en-flow">How Bluetooth data flows</a></li>
+    <li><a href="#en-perm">Permissions and why we need them</a></li>
+    <li><a href="#en-share">Sharing and third parties</a></li>
+    <li><a href="#en-security">Security</a></li>
+    <li><a href="#en-retention">Retention and deletion</a></li>
+    <li><a href="#en-children">Children's privacy</a></li>
+    <li><a href="#en-rights">Your rights</a></li>
+    <li><a href="#en-transfer">International transfers</a></li>
+    <li><a href="#en-changes">Changes to this policy</a></li>
+    <li><a href="#en-contact">Contact us</a></li>
+  </ol>
+
+  <h2 id="en-about"><span class="no">1.</span>Who we are</h2>
+  <p>
+    The APEX app (the “App”) is developed and published by
+    <strong>Dongguan Mysmok Electronic Technology Co., Ltd.</strong>
+    (Chinese name: 东莞市麦斯莫科电子科技有限公司; unified social credit code
+    <code>91441900MA51U0X784</code>; “we”, “us”, “our”).
+  </p>
+  <p>
+    Registered address: Room 302, Building 1, No. 107 Qingyu Road, Qingxi Town,
+    Dongguan City, Guangdong Province, China (广东省东莞市清溪镇清渔路107号1号楼302室).
+  </p>
+  <p>
+    We are the data controller for the limited processing described in this policy. Because the App
+    performs no server-side processing, in practice there is no personal data for us to control.
+  </p>
+
+  <h2 id="en-what"><span class="no">2.</span>What the app does</h2>
+  <p>
+    The App is the companion application for our electronic heating device (model MS‑6300‑A,
+    product name APEX). It is a remote control, not a content or social service. After connecting
+    to the device over Bluetooth Low Energy (BLE) you can:
+  </p>
+  <ul>
+    <li>scan for and connect to nearby APEX devices;</li>
+    <li>read device information (product model, serial number, hardware and firmware version, battery level);</li>
+    <li>choose a working mode and set the target temperature and duration of each stage;</li>
+    <li>start, pause, resume, skip a preheat stage, and stop heating;</li>
+    <li>view diagnostic data and run calibration;</li>
+    <li>install a firmware update (OTA) from a <code>.bin</code> file stored on your phone.</li>
+  </ul>
+
+  <h2 id="en-collect"><span class="no">3.</span>Information we collect</h2>
+  <div class="lead"><strong>We collect no personal information. None.</strong></div>
+  <table>
+    <tr><th>Category</th><th>Collected?</th><th>Notes</th></tr>
+    <tr><td>Account data (name, e‑mail, phone, ID)</td><td class="ok">No</td><td>There is no sign‑up or login.</td></tr>
+    <tr><td>Location data</td><td class="ok">No</td><td>Never read, recorded or transmitted — see §5.</td></tr>
+    <tr><td>Contacts, photos, camera, microphone</td><td class="ok">No</td><td>Never accessed. A firmware update reads only the one file you pick.</td></tr>
+    <tr><td>Usage analytics, crash reports, advertising ID</td><td class="ok">No</td><td>No analytics, ad or crash‑reporting SDK is bundled.</td></tr>
+    <tr><td>Network traffic</td><td class="ok">No</td><td>The App requests no Internet permission and contains no network code.</td></tr>
+    <tr><td>Data sent to us or to third parties</td><td class="ok">No</td><td>Nothing leaves your phone.</td></tr>
+  </table>
+
+  <h3>What is stored on your phone</h3>
+  <p>The App keeps only two small preferences in its private storage, readable by no other app:</p>
+  <table>
+    <tr><th>Stored item</th><th>Purpose</th></tr>
+    <tr><td>Interface language</td><td>Remembers English, 中文 or Русский between launches.</td></tr>
+    <tr><td>Disclaimer acceptance flag</td><td>Remembers that you accepted the disclaimer so it is not shown on every launch.</td></tr>
+  </table>
+  <p>
+    These are stored with Android <code>SharedPreferences</code> / iOS <code>UserDefaults</code>.
+    They never leave the device and are deleted when you uninstall the App or clear its data.
+  </p>
+  <p class="muted">
+    Note: the App reads the device's own technical values (temperature, power, firmware version,
+    error codes) in order to display them. These values describe the hardware, not you.
+  </p>
+
+  <h2 id="en-flow"><span class="no">4.</span>How Bluetooth data flows</h2>
+  <p>
+    All communication happens directly between your phone and the device over BLE, a short‑range
+    radio link. There is no relay server, no cloud account and no vendor back end. Range is a few
+    metres; the link is encrypted at the BLE link layer where the device supports it.
+  </p>
+
+  <h2 id="en-perm"><span class="no">5.</span>Permissions and why we need them</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th><th>If refused</th></tr>
+    <tr>
+      <td>Bluetooth scan &amp; connect<br><code>BLUETOOTH_SCAN</code><br><code>BLUETOOTH_CONNECT</code></td>
+      <td>To find nearby APEX devices and talk to them. This is the core function of the App.</td>
+      <td>The App cannot be used.</td>
+    </tr>
+    <tr>
+      <td>Approximate/precise location<br><code>ACCESS_FINE_LOCATION</code></td>
+      <td>
+        <strong>Android 11 and older only.</strong> Those Android versions require a location
+        permission before any third‑party app may scan for Bluetooth devices. The App declares
+        <code>neverForLocation</code> and <strong>never reads, records or transmits location</strong>.
+        On Android 12+ the permission is not requested at all.
+      </td>
+      <td>Scanning does not work on Android 11 and older.</td>
+    </tr>
+  </table>
+  <p>The App requests no other sensitive permission. It has no Internet permission.</p>
+
+  <h2 id="en-share"><span class="no">6.</span>Sharing and third parties</h2>
+  <p>
+    We do not sell, rent, trade or share personal information, because we do not have any.
+    The App contains no third‑party advertising, analytics, attribution or crash‑reporting SDK,
+    and no social‑login SDK.
+  </p>
+
+  <h2 id="en-security"><span class="no">7.</span>Security</h2>
+  <p>
+    Preferences are kept in the App's private sandbox, protected by the operating system.
+    Device traffic stays on the BLE link. You can remove everything the App has stored by
+    uninstalling it or using “Clear storage” in the system settings.
+  </p>
+
+  <h2 id="en-retention"><span class="no">8.</span>Retention and deletion</h2>
+  <p>
+    We hold no data, so there is no retention period on our side. On your phone the two
+    preferences remain until you uninstall the App or clear its data. Diagnostic values shown
+    on screen are held in memory only and disappear when the App closes.
+  </p>
+
+  <h2 id="en-children"><span class="no">9.</span>Children's privacy</h2>
+  <p>
+    The App controls a heating appliance and is intended for adults. It is not directed to
+    children and we do not knowingly collect information from anyone, children included.
+  </p>
+
+  <h2 id="en-rights"><span class="no">10.</span>Your rights</h2>
+  <p>
+    Depending on where you live (GDPR, UK GDPR, CCPA/CPRA, PIPL and similar), you may have the
+    right to access, correct, delete, restrict or port your personal data, and to object to
+    processing. Because we process no personal data, these rights are satisfied automatically:
+    there is nothing for us to look up, correct or erase. Any local preference can be removed by
+    you, on your device, at any time. You may still contact us (see §13) and we will answer within
+    30 days.
+  </p>
+  <p>We do not sell or share personal information as those terms are defined by the CCPA/CPRA.</p>
+
+  <h2 id="en-transfer"><span class="no">11.</span>International transfers</h2>
+  <p>
+    No data is transferred across borders, because no data leaves your phone.
+  </p>
+
+  <h2 id="en-changes"><span class="no">12.</span>Changes to this policy</h2>
+  <p>
+    If a future version of the App starts collecting data, we will update this page and state the
+    new effective date before that version is released. The current version is always available at
+    this URL, which is the one linked from the store listing.
+  </p>
+
+  <h2 id="en-contact"><span class="no">13.</span>Contact us</h2>
+  <p>
+    Questions about this policy or about privacy in the App:<br>
+    <strong>Dongguan Mysmok Electronic Technology Co., Ltd.</strong><br>
+    Room 302, Building 1, No. 107 Qingyu Road, Qingxi Town, Dongguan City, Guangdong, China<br>
+    E‑mail: <a href="mailto:Kathy@mysmok.com">Kathy@mysmok.com</a><br>
+    Web: <a href="https://www.mysmok.com" rel="noopener">www.mysmok.com</a>
+  </p>
+
+  <footer>
+    <div class="sig">
+      <span>© 2026 Dongguan Mysmok Electronic Technology Co., Ltd.</span>
+      <span>APEX · Privacy Policy · v1.0 · 22 Oct 2026</span>
+    </div>
+  </footer>
+</article>
+
+<!-- ==================================================================== -->
+<!-- =============================== 中文 =============================== -->
+<!-- ==================================================================== -->
+<article id="zh">
+
+  <div class="lead">
+    <strong>一句话：</strong>APEX 是一款纯本地的设备控制工具。没有账号、没有联网、没有统计 SDK，
+    不收集、不上传、不共享任何个人信息。App 从设备读到的数据只留在你的手机和这台设备上。
+  </div>
+
+  <h2>目录</h2>
+  <ol>
+    <li><a href="#zh-about">我们是谁</a></li>
+    <li><a href="#zh-what">本应用是做什么的</a></li>
+    <li><a href="#zh-collect">我们收集哪些信息</a></li>
+    <li><a href="#zh-flow">蓝牙数据是怎么走的</a></li>
+    <li><a href="#zh-perm">权限说明</a></li>
+    <li><a href="#zh-share">共享与第三方</a></li>
+    <li><a href="#zh-security">数据安全</a></li>
+    <li><a href="#zh-retention">保存期限与删除</a></li>
+    <li><a href="#zh-children">儿童隐私</a></li>
+    <li><a href="#zh-rights">你的权利</a></li>
+    <li><a href="#zh-transfer">跨境传输</a></li>
+    <li><a href="#zh-changes">政策变更</a></li>
+    <li><a href="#zh-contact">联系我们</a></li>
+  </ol>
+
+  <h2 id="zh-about"><span class="no">1.</span>我们是谁</h2>
+  <p>
+    本应用「APEX」（下称“本应用”）由<strong>东莞市麦斯莫科电子科技有限公司</strong>开发和发布
+    （统一社会信用代码 <code>91441900MA51U0X784</code>，下称“我们”）。
+  </p>
+  <p>注册地址：广东省东莞市清溪镇清渔路 107 号 1 号楼 302 室，邮编 523660。</p>
+  <p>
+    本应用不进行任何服务器端处理，因此实际上我们并不持有你的个人信息；本文所述的处理，
+    全部发生在你的手机与设备之间。
+  </p>
+
+  <h2 id="zh-what"><span class="no">2.</span>本应用是做什么的</h2>
+  <p>
+    本应用是我们生产的电子加热设备（型号 MS‑6300‑A，产品名 APEX）的配套手机应用，
+    本质是一台“遥控器”，不是内容服务或社区服务。通过蓝牙低功耗（BLE）连接设备后，你可以：
+  </p>
+  <ul>
+    <li>搜索并连接附近的 APEX 设备；</li>
+    <li>读取设备信息（产品型号、序列号、硬件版本、固件版本、电量）；</li>
+    <li>选择工作模式，设置各段的目标温度与时长；</li>
+    <li>开始加热、暂停/继续、跳过预热、结束加热；</li>
+    <li>查看设备诊断数据、执行校准；</li>
+    <li>用手机里已有的 <code>.bin</code> 文件为设备升级固件（OTA）。</li>
+  </ul>
+
+  <h2 id="zh-collect"><span class="no">3.</span>我们收集哪些信息</h2>
+  <div class="lead"><strong>我们不收集任何个人信息，一项都没有。</strong></div>
+  <table>
+    <tr><th>类别</th><th>是否收集</th><th>说明</th></tr>
+    <tr><td>账号信息（姓名、邮箱、手机号、身份证）</td><td class="ok">否</td><td>本应用没有注册和登录。</td></tr>
+    <tr><td>位置信息</td><td class="ok">否</td><td>从不读取、不记录、不上传，详见第 5 条。</td></tr>
+    <tr><td>通讯录、相册、相机、麦克风</td><td class="ok">否</td><td>从不访问。升级固件时只读取你主动选中的那一个文件。</td></tr>
+    <tr><td>使用统计、崩溃日志、广告标识符</td><td class="ok">否</td><td>未集成任何统计、广告、崩溃上报 SDK。</td></tr>
+    <tr><td>网络数据</td><td class="ok">否</td><td>未申请联网权限，代码中没有任何网络请求。</td></tr>
+    <tr><td>发送给我们或第三方的数据</td><td class="ok">否</td><td>数据不离开你的手机。</td></tr>
+  </table>
+
+  <h3>手机上会存什么</h3>
+  <p>本应用仅在自身的私有目录里保存两项偏好设置，其他应用无法读取：</p>
+  <table>
+    <tr><th>保存内容</th><th>用途</th></tr>
+    <tr><td>界面语言</td><td>记住你选择的语言（English / 中文 / Русский）。</td></tr>
+    <tr><td>免责声明确认状态</td><td>记住你已阅读并同意，避免每次启动重复弹出。</td></tr>
+  </table>
+  <p>
+    存储方式为 Android <code>SharedPreferences</code> / iOS <code>UserDefaults</code>，
+    不会离开设备；卸载本应用或在系统设置里清除数据后即被删除。
+  </p>
+  <p class="muted">
+    说明：本应用会读取设备自身的技术数据（温度、功率、固件版本、故障码）用于显示。
+    这些数据描述的是设备，不是你的个人信息。
+  </p>
+
+  <h2 id="zh-flow"><span class="no">4.</span>蓝牙数据是怎么走的</h2>
+  <p>
+    全部通信都在你的手机与设备之间通过 BLE 短距无线直连完成。没有中转服务器、没有云端账号、
+    没有厂商后台。通信距离只有数米；设备支持时，链路在 BLE 协议层加密。
+  </p>
+
+  <h2 id="zh-perm"><span class="no">5.</span>权限说明</h2>
+  <table>
+    <tr><th>权限</th><th>为什么需要</th><th>拒绝后</th></tr>
+    <tr>
+      <td>蓝牙扫描与连接<br><code>BLUETOOTH_SCAN</code><br><code>BLUETOOTH_CONNECT</code></td>
+      <td>搜索附近的 APEX 设备并与设备通信，这是本应用的核心功能。</td>
+      <td>无法使用本应用。</td>
+    </tr>
+    <tr>
+      <td>位置信息<br><code>ACCESS_FINE_LOCATION</code></td>
+      <td>
+        <strong>仅 Android 11 及更早版本需要。</strong>这些安卓版本规定：第三方应用必须先获得定位权限，
+        系统才允许扫描蓝牙设备。本应用声明了 <code>neverForLocation</code>，
+        <strong>不读取、不记录、不上传任何位置数据</strong>；在 Android 12 及以上系统中根本不申请该权限。
+      </td>
+      <td>旧系统上无法扫描设备。</td>
+    </tr>
+  </table>
+  <p>除上述权限外，本应用不申请任何其他敏感权限，也没有联网权限。</p>
+
+  <h2 id="zh-share"><span class="no">6.</span>共享与第三方</h2>
+  <p>
+    我们不销售、不出租、不交换、不共享个人信息——因为我们根本没有这些信息。
+    本应用不含任何第三方广告、统计、归因或崩溃上报 SDK，也没有第三方登录 SDK。
+  </p>
+
+  <h2 id="zh-security"><span class="no">7.</span>数据安全</h2>
+  <p>
+    偏好设置保存在应用私有沙箱内，受系统权限保护；设备数据只存在于 BLE 链路上。
+    你可以随时卸载本应用或在系统设置中“清除数据”，彻底删除本应用保存的全部内容。
+  </p>
+
+  <h2 id="zh-retention"><span class="no">8.</span>保存期限与删除</h2>
+  <p>
+    我们不在服务器上保存任何数据，因此不存在保存期限问题。手机上的两项偏好设置会一直保留到你卸载
+    本应用或清除应用数据为止；界面上显示的设备诊断值只存在于内存，退出应用即消失。
+  </p>
+
+  <h2 id="zh-children"><span class="no">9.</span>儿童隐私</h2>
+  <p>
+    本应用用于控制加热设备，面向成年人。本应用不面向儿童，也不会有意收集任何人的信息，包括儿童。
+  </p>
+
+  <h2 id="zh-rights"><span class="no">10.</span>你的权利</h2>
+  <p>
+    根据你所在地区的法律（《个人信息保护法》、GDPR、UK GDPR、CCPA/CPRA 等），你可能享有查阅、更正、
+    删除、限制处理、可携带以及反对处理等权利。由于我们不处理你的个人信息，这些权利在事实上已经满足：
+    没有数据需要我们去查询、更正或删除。手机上的本地偏好，你可以随时自行清除。
+    你仍可通过第 13 条的联系方式与我们联系，我们会在 30 天内答复。
+  </p>
+  <p>我们不会“出售”或“共享”个人信息（按 CCPA/CPRA 的定义）。</p>
+
+  <h2 id="zh-transfer"><span class="no">11.</span>跨境传输</h2>
+  <p>由于数据不离开你的手机，因此不存在跨境传输。</p>
+
+  <h2 id="zh-changes"><span class="no">12.</span>政策变更</h2>
+  <p>
+    如果将来某个版本开始收集数据，我们会在该版本发布前更新本页面并注明新的生效日期。
+    本页面始终是最新版本，商店商品页所链接的就是这个地址。
+  </p>
+
+  <h2 id="zh-contact"><span class="no">13.</span>联系我们</h2>
+  <p>
+    对本政策或本应用的隐私处理有任何疑问：<br>
+    <strong>东莞市麦斯莫科电子科技有限公司</strong><br>
+    地址：广东省东莞市清溪镇清渔路 107 号 1 号楼 302 室（邮编 523660）<br>
+    邮箱：<a href="mailto:Kathy@mysmok.com">Kathy@mysmok.com</a><br>
+    网站：<a href="https://www.mysmok.com" rel="noopener">www.mysmok.com</a>
+  </p>
+
+  <footer>
+    <div class="sig">
+      <span>© 2026 东莞市麦斯莫科电子科技有限公司</span>
+      <span>APEX · 隐私政策 · v1.0 · 2026 年 10 月 22 日</span>
+    </div>
+  </footer>
+</article>
+
+<!-- ==================================================================== -->
+<!-- ============================= РУССКИЙ ============================== -->
+<!-- ==================================================================== -->
+<article id="ru">
+
+  <div class="lead">
+    <strong>Коротко:</strong> приложение APEX — локальный пульт управления устройством.
+    В нём нет учётных записей, нет доступа в интернет и нет аналитики: мы не собираем,
+    не передаём и не храним на серверах персональные данные. Всё, что приложение читает
+    с устройства, остаётся на вашем телефоне и на самом устройстве.
+  </div>
+
+  <h2>Содержание</h2>
+  <ol>
+    <li><a href="#ru-about">Кто мы</a></li>
+    <li><a href="#ru-what">Что делает приложение</a></li>
+    <li><a href="#ru-collect">Какие данные мы собираем</a></li>
+    <li><a href="#ru-flow">Как передаются данные по Bluetooth</a></li>
+    <li><a href="#ru-perm">Разрешения и их назначение</a></li>
+    <li><a href="#ru-share">Передача данных и третьи стороны</a></li>
+    <li><a href="#ru-security">Безопасность</a></li>
+    <li><a href="#ru-retention">Сроки хранения и удаление</a></li>
+    <li><a href="#ru-children">Конфиденциальность детей</a></li>
+    <li><a href="#ru-rights">Ваши права</a></li>
+    <li><a href="#ru-transfer">Трансграничная передача</a></li>
+    <li><a href="#ru-changes">Изменения политики</a></li>
+    <li><a href="#ru-contact">Связаться с нами</a></li>
+  </ol>
+
+  <h2 id="ru-about"><span class="no">1.</span>Кто мы</h2>
+  <p>
+    Приложение APEX («Приложение») разработано и публикуется компанией
+    <strong>Dongguan Mysmok Electronic Technology Co., Ltd.</strong>
+    (китайское название: 东莞市麦斯莫科电子科技有限公司; единый код <code>91441900MA51U0X784</code>;
+    «мы», «нас»).
+  </p>
+  <p>
+    Адрес: комната 302, корпус 1, № 107, ул. Цинъюй, г. Цинси, г. Дунгуань, пров. Гуандун, Китай.
+  </p>
+  <p>
+    Приложение не выполняет серверной обработки, поэтому фактически персональные данные у нас
+    отсутствуют: вся обработка происходит между вашим телефоном и устройством.
+  </p>
+
+  <h2 id="ru-what"><span class="no">2.</span>Что делает приложение</h2>
+  <p>
+    Приложение — спутник электронного нагревательного устройства (модель MS‑6300‑A, продукт APEX).
+    Это пульт дистанционного управления, а не контентный или социальный сервис. Подключившись к
+    устройству по Bluetooth Low Energy (BLE), вы можете:
+  </p>
+  <ul>
+    <li>искать и подключать расположенные рядом устройства APEX;</li>
+    <li>читать сведения об устройстве (модель, серийный номер, версия прошивки, заряд);</li>
+    <li>выбирать режим и задавать целевую температуру и длительность этапов;</li>
+    <li>запускать нагрев, ставить на паузу, продолжать, пропускать прогрев и останавливать нагрев;</li>
+    <li>просматривать диагностические данные и выполнять калибровку;</li>
+    <li>обновлять прошивку (OTA) из файла <code>.bin</code>, выбранного на телефоне.</li>
+  </ul>
+
+  <h2 id="ru-collect"><span class="no">3.</span>Какие данные мы собираем</h2>
+  <div class="lead"><strong>Мы не собираем персональные данные. Никакие.</strong></div>
+  <table>
+    <tr><th>Категория</th><th>Собирается</th><th>Пояснение</th></tr>
+    <tr><td>Данные учётной записи (имя, e‑mail, телефон)</td><td class="ok">Нет</td><td>Регистрации и входа нет.</td></tr>
+    <tr><td>Геолокация</td><td class="ok">Нет</td><td>Никогда не читается и не передаётся — см. п. 5.</td></tr>
+    <tr><td>Контакты, фото, камера, микрофон</td><td class="ok">Нет</td><td>Доступа нет. При обновлении прошивки читается только выбранный файл.</td></tr>
+    <tr><td>Аналитика, отчёты о сбоях, рекламный идентификатор</td><td class="ok">Нет</td><td>SDK аналитики, рекламы и сбора сбоев не подключены.</td></tr>
+    <tr><td>Сетевой обмен</td><td class="ok">Нет</td><td>Разрешение на интернет не запрашивается, сетевого кода нет.</td></tr>
+    <tr><td>Передача нам или третьим лицам</td><td class="ok">Нет</td><td>Данные не покидают телефон.</td></tr>
+  </table>
+
+  <h3>Что хранится на телефоне</h3>
+  <p>Приложение хранит в своём приватном каталоге только две настройки:</p>
+  <table>
+    <tr><th>Что</th><th>Зачем</th></tr>
+    <tr><td>Язык интерфейса</td><td>Запоминает выбранный язык (English / 中文 / Русский).</td></tr>
+    <tr><td>Факт принятия дисклеймера</td><td>Чтобы не показывать дисклеймер при каждом запуске.</td></tr>
+  </table>
+  <p>
+    Хранятся средствами <code>SharedPreferences</code> (Android) / <code>UserDefaults</code> (iOS),
+    не покидают устройство и удаляются при удалении приложения или очистке данных.
+  </p>
+
+  <h2 id="ru-flow"><span class="no">4.</span>Как передаются данные по Bluetooth</h2>
+  <p>
+    Вся связь идёт напрямую между телефоном и устройством по BLE. Нет промежуточного сервера,
+    нет облачной учётной записи и нет серверной части производителя. Радиус действия — несколько
+    метров; при поддержке устройством канал шифруется на уровне BLE.
+  </p>
+
+  <h2 id="ru-perm"><span class="no">5.</span>Разрешения и их назначение</h2>
+  <table>
+    <tr><th>Разрешение</th><th>Зачем</th><th>Если отклонить</th></tr>
+    <tr>
+      <td>Bluetooth: поиск и подключение<br><code>BLUETOOTH_SCAN</code><br><code>BLUETOOTH_CONNECT</code></td>
+      <td>Чтобы находить устройства APEX рядом и обмениваться с ними данными. Это основная функция.</td>
+      <td>Приложением нельзя пользоваться.</td>
+    </tr>
+    <tr>
+      <td>Геолокация<br><code>ACCESS_FINE_LOCATION</code></td>
+      <td>
+        <strong>Только Android 11 и ниже.</strong> В этих версиях система требует разрешение на
+        местоположение, прежде чем приложение сможет сканировать Bluetooth. Приложение объявляет
+        <code>neverForLocation</code> и <strong>не читает и не передаёт геоданные</strong>.
+        В Android 12+ разрешение не запрашивается.
+      </td>
+      <td>На старых системах не работает поиск устройств.</td>
+    </tr>
+  </table>
+  <p>Других чувствительных разрешений приложение не запрашивает; доступа в интернет у него нет.</p>
+
+  <h2 id="ru-share"><span class="no">6.</span>Передача данных и третьи стороны</h2>
+  <p>
+    Мы не продаём, не сдаём в аренду и не передаём персональные данные, поскольку их у нас нет.
+    В приложении нет сторонних SDK рекламы, аналитики, атрибуции и сбора сбоев, а также входа
+    через соцсети.
+  </p>
+
+  <h2 id="ru-security"><span class="no">7.</span>Безопасность</h2>
+  <p>
+    Настройки хранятся в приватной песочнице приложения и защищены ОС. Обмен с устройством идёт
+    по каналу BLE. Удалить всё сохранённое можно, удалив приложение или очистив его данные в системе.
+  </p>
+
+  <h2 id="ru-retention"><span class="no">8.</span>Сроки хранения и удаление</h2>
+  <p>
+    На наших серверах данных нет, поэтому сроков хранения с нашей стороны не существует.
+    Две настройки остаются на телефоне, пока вы не удалите приложение или его данные.
+    Диагностические значения отображаются только в памяти и исчезают при закрытии приложения.
+  </p>
+
+  <h2 id="ru-children"><span class="no">9.</span>Конфиденциальность детей</h2>
+  <p>
+    Приложение управляет нагревательным прибором и предназначено для взрослых. Оно не адресовано
+    детям, и мы сознательно не собираем сведения ни от кого, включая детей.
+  </p>
+
+  <h2 id="ru-rights"><span class="no">10.</span>Ваши права</h2>
+  <p>
+    В зависимости от законодательства (GDPR, UK GDPR, CCPA/CPRA, PIPL и др.) вы можете иметь право на
+    доступ, исправление, удаление, ограничение обработки и переносимость данных. Поскольку мы не
+    обрабатываем персональные данные, эти права обеспечены по умолчанию: нам нечего искать,
+    исправлять или удалять. Локальные настройки вы можете удалить сами в любой момент.
+    Написать нам можно по контакту из п. 13; ответим в течение 30 дней.
+  </p>
+
+  <h2 id="ru-transfer"><span class="no">11.</span>Трансграничная передача</h2>
+  <p>Данные не покидают телефон, поэтому трансграничной передачи нет.</p>
+
+  <h2 id="ru-changes"><span class="no">12.</span>Изменения политики</h2>
+  <p>
+    Если в будущей версии появится сбор данных, мы обновим эту страницу и укажем новую дату
+    вступления в силу до её выпуска. Актуальная версия всегда доступна по этому адресу — именно
+    он указан в карточке приложения в магазине.
+  </p>
+
+  <h2 id="ru-contact"><span class="no">13.</span>Связаться с нами</h2>
+  <p>
+    Вопросы по политике и конфиденциальности:<br>
+    <strong>Dongguan Mysmok Electronic Technology Co., Ltd.</strong><br>
+    302, корпус 1, № 107, ул. Цинъюй, г. Цинси, г. Дунгуань, пров. Гуандун, Китай<br>
+    E‑mail: <a href="mailto:Kathy@mysmok.com">Kathy@mysmok.com</a><br>
+    Сайт: <a href="https://www.mysmok.com" rel="noopener">www.mysmok.com</a>
+  </p>
+
+  <footer>
+    <div class="sig">
+      <span>© 2026 Dongguan Mysmok Electronic Technology Co., Ltd.</span>
+      <span>APEX · Политика конфиденциальности · v1.0 · 22.10.2026</span>
+    </div>
+  </footer>
+</article>
+
+</div>
+
+<script>
+(function () {
+  var TITLES = {
+    en: ['Privacy Policy',
+         'APEX — companion app for APEX electronic heating devices',
+         ['Effective: 22 Oct 2026', 'Last updated: 22 Oct 2026', 'Version 1.0', 'Android · iOS']],
+    zh: ['隐私政策',
+         'APEX — APEX 电子加热设备配套应用',
+         ['生效日期：2026 年 10 月 22 日', '最后更新：2026 年 10 月 22 日', '版本 1.0', 'Android · iOS']],
+    ru: ['Политика конфиденциальности',
+         'APEX — приложение для электронных нагревательных устройств APEX',
+         ['Дата вступления: 22.10.2026', 'Обновлено: 22.10.2026', 'Версия 1.0', 'Android · iOS']]
+  };
+  var tabs = document.querySelectorAll('.tabs button');
+  var arts = document.querySelectorAll('article');
+
+  function setLang(lang, scrollTop) {
+    if (!TITLES[lang]) lang = 'en';
+    arts.forEach(function (a) { a.classList.toggle('active', a.id === lang); });
+    tabs.forEach(function (b) { b.setAttribute('aria-selected', String(b.dataset.lang === lang)); });
+    var t = TITLES[lang];
+    document.getElementById('pageTitle').textContent = t[0];
+    document.getElementById('pageSub').textContent = t[1];
+    document.getElementById('pageMeta').innerHTML =
+      t[2].map(function (s) { return '<li>' + s + '</li>'; }).join('');
+    document.documentElement.lang = lang;
+    document.title = t[0] + ' — APEX';
+    /* 用 ?lang=xx 记住语言，不要用 #xx：改 hash 会让浏览器跳到同名 article 上，把页头挤没了 */
+    try {
+      var u = new URL(location.href);
+      u.searchParams.set('lang', lang);
+      history.replaceState(null, '', u.toString());
+    } catch (e) {}
+    if (scrollTop) { window.scrollTo({ top: 0, behavior: 'auto' }); }
+  }
+
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.lang, true); });
+  });
+
+  var fromQuery = (new URLSearchParams(location.search).get('lang') || '').toLowerCase();
+  var initial = fromQuery;
+  if (!TITLES[initial]) {
+    var nav = (navigator.language || 'en').toLowerCase();
+    initial = nav.indexOf('zh') === 0 ? 'zh' : nav.indexOf('ru') === 0 ? 'ru' : 'en';
+  }
+  setLang(initial, false);
+})();
+</script>
+</body>
+</html>
